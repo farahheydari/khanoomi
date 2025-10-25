@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/output.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./stylesheet/global.css"/>
+    <title>khanoomi</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    .container {
+      position: relative;
+    }
+
+    .container {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+    }
+
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .swiper-slide img {
+      display: block;
+    }
+    .swiper-button-next{
+        width: 35px !important;
+        height: 35px !important;
+        size: 15px !important; 
+        color: #d83393;
+    }
+    .swiper-button-prev {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 35px !important; 
+        color: #d83393;
+    }
+       .animePlay{
+        box-shadow:0px 0px 38px -10px #ffffff;
+        animation: glow .5s ease-in-out infinite alternate;
+        width: 130px;
+        height: 130px;
+       }
+
+       @keyframes glow{
+        from{
+            width: 120px;
+            height: 120px;
+            box-shadow:0px 0px 38px -10px #ffffff
+        }to{
+            width: 130px;
+            height: 130px;
+            box-shadow:0px 0px 38px 10px #ffaad9
+
+        }
+       }
+    </style>
+</head>
+
+<body>
+    <section class="sec1">
+        <img src="./img/banner3.png" class="w-full h-[50px] lg:h-[60px] object-cover" >
+    </section>
+    <!-- nav -->
+    <nav class="w-full h-[70px] xl:h-[80px]  flex"  style="padding-inline: 20px;">
+     <div class="hidden xl:flex w-1/5  h-full justify-center items-center ">
+            <div class="w-[50px] h-[100px] justify-center items-center flex">
+                <span class="material-symbols-outlined text-gray-800 ">shopping_cart</span>
+            </div>
+            <div class="w-[120px] h-[40px] rounded-[5px] border-1 border-pink-700 flex justify-center items-center hover:border-pink-900 duration-300 ">
+                <a class="text-pink-600" style="margin-right: 5px;">ورود</a>
+                <span class="material-symbols-outlined text-pink-700 ">login</span>
+            </div>
+     </div>
+     <div class="hidden xl:flex w-4/5 h-full items-center justify-end ">
+        <div class="w-[500px] h-[40px] border-1 border-gray-300 flex items-center justify-end rounded-[5px]">
+            <input dir="rtl" placeholder="جست و جو" class="w-full h-full placeholder:text-[20px] border-0  focus:outline-none text-gray-800  placeholder:text-gray-300" />
+            <span class="material-symbols-outlined text-gray-300" style="font-size: 35px;">search</span>
+        </div>
+     </div>   
+     <div class="hidden xl:flex w-[200px] h-full items-center justify-start">
+        <img src="./img/khanomi.png" class="w-[120px] h-[60px]"  style="margin-left: 10px;">
+     </div>
+
+     <div class="flex justify-start items-center xl:hidden w-1/2 h-full">
+                <span class="material-symbols-outlined text-gray-800 " style="margin-left: 10px;">shopping_cart</span>
+            <div class="w-[80px] h-[40px] rounded-[5px] border-1 border-pink-700 flex justify-center items-center" style="margin-inline: 10px;">
+                <a class="text-pink-600 text-[20px]" style="margin-right:5px;">ورود</a>
+                <span class="material-symbols-outlined text-pink-700">login</span>
+            </div>
+            <span class="material-symbols-outlined text-gray-800" style="font-size: 35px;">search</span>
+
+     </div>
+     <div class="flex justify-end items-center xl:hidden w-1/2 h-full ">
+        <img src="./img/khanomi.png" class="w-[100px] h-[60px]">
+        <span class="material-symbols-outlined text-gray-600">menu</span>
+    </div>
+    </nav>
+    <!-- nav -->
+     <!-- menu -->
+    <section class="sec2">
+        <div class="w-[full] h-[45px] hidden xl:flex bg-neutral-800">
+            <ul class="flex justify-start items-center w-full h-full text-amber-50" dir="rtl" style="padding-inline: 60px;">
+                <li class="w-[200px] flex justify-center items-center hover:text-pink-600 group">دسته بندی محصولات
+                    <span class="material-symbols-outlined group-hover:rotate-180 duration-700" style="margin-top: 7px;">keyboard_arrow_down</span>
+                </li>
+                <li class="w-[120px] hover:text-pink-600">پیشنهاد ویژه</li>
+                <li class="w-[70px]  hover:text-pink-600">برندها</li>
+                <li class="w-[100px] hover:text-pink-600 ">مجله خانومی</li>
+            </ul>
+        </div>
+    </section>
+    <!-- menu -->
+     <!-- sec3-sider1 -->
+    <section class="w-full flex justify-center " style="margin-top: 40px;">
+        <div class="hidden lg:flex container w-[90%] h-[400px] ">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-product swiper-slide">
+                            <img src="./img/slider1.jpeg" class="object-cover "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider3.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider4.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider5.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider6.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider7.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider8.jpeg" class="object-contain"/>
+                        </div>
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination" style="margin-bottom: 10px;"></div>
+                    </div>
+        </div>
+        <!-- responsiveBanner -->
+          <div class="flex lg:hidden container w-[90%] h-[200px] ">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slider1mb.jpeg" class="object-contain "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider3-mb.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider4mb.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider5mb.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider6mb.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider7mb.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider8mb.jpeg" class="object-contain"/>
+                        </div>
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination" style="margin-bottom: 10px;" ></div>
+                    </div>
+        </div>
+    </section>
+    <!--  sec3-sider1-->
+    <!-- sec4  -->
+        <section class="w-full h-[100px] md:h-[200px] " style="padding-inline: 10px;">
+        <ul dir="rtl" class="hidden md:flex justify-evenly items-center md:h-[100px]  md:*:w-[90px]" style="margin-top: 30px;" >
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/1.png" class="rounded-[50%]"/>
+                <p class="text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت پوست</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/2.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مکمل</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/3.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">آرایشی</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/4.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">دیجیتال</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/5.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت مو</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/6.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">عطروادکلن</p>
+            </li>
+        </ul>
+        <div class=" h-[120px] flex md:hidden ">
+      <div dir="rtl" class=" swiper mySwiper4" >
+        <ul  class="swiper-wrapper justify-evenly items-center ">
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/1.png" class="rounded-[50%]"/>
+                <p class="text-gray-700 text-[10px] md:text-[13px]" >مراقبت پوست</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/2.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" >مکمل</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/3.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]">آرایشی</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/4.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" >دیجیتال</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/5.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]">مراقبت مو</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/6.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]">عطروادکلن</p>
+            </li>
+            </ul>
+          </div>
+          </div>
+     </section>
+    <!-- sec4 -->
+    <!-- sec5 -->
+     <section class="w-[100%] flex justify-center">
+      <div class="hidden md:flex w-[90%]  h-[350px]  items-center bg-pink-600 rounded-[5px]">
+          <div dir="rtl" class="swiper mySwiper2 h-[90%]  ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  flex justify-center" style="margin-right: 10px;">
+                <img src="./img/pink.png"/>
+                <div class="w-full h-[160px] flex justify-center items-center ">
+                    <div class=" flex justify-center items-center bg-pink-600 rounded-[50%] animePlay" >
+                      <img src="./img/box.png" class="w-[150px] h-[130px]"/>
+                    </div>
+                </div>
+                <div class="w-full h-full ">
+                  <p class="text-[15px] text-amber-50">بزرگترین حراج روزانه</p>
+                  <div dir="ltr" class="flex justify-center items-center" style="margin-top: 30px;">
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>00</p>
+                    </div>
+                    <p class="text-amber-50">:</p>
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>53</p>
+                    </div>
+                      <p class="text-amber-50">:</p>
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>30</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/pro1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">آدرا</span>
+                      <p class="text-[15px] text-right h-[45px]">کرم مغذی و مرطوب کننده آرگان 300میل</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/saye.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">رز گونه تک رنگ همراه برس مخصوص</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/pankek.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کالیستا</span>
+                      <p class="text-[15px] text-right h-[45px]">پنکک فشرده نرم</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/primer.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">پرایمر و کرم زیر ساز آرایش</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/rozhgoneh.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">ترو کاور</span>
+                      <p class="text-[15px] h-[45px] text-right">رز گونه مدل اسکیلی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/creampoder1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">زنو باینوتیک</span>
+                      <p class="text-[15px] h-[45px] text-right">پرلیمر مناسب پوست چرب</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/cream1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] h-[45px] text-right">کرم پودر فاقد چربی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+      <div class="flex md:hidden w-[90%]  h-[350px]  items-center bg-pink-600 rounded-[5px]" style="margin-top: 10px;">
+          <div dir="rtl" class="swiper mySwiper3 h-[90%]  ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center" style="margin-right: 10px; width: 200px;">
+                <img src="./img/pink.png"/>
+                <div class="w-full h-[160px] flex justify-center items-center ">
+                    <div class=" flex justify-center items-center bg-pink-600 rounded-[50%] animePlay" >
+                      <img src="./img/box.png" class="w-[150px] h-[130px]"/>
+                    </div>
+                </div>
+                <div class="w-full h-full ">
+                  <p class="text-[15px] text-amber-50">بزرگترین حراج روزانه</p>
+                  <div dir="ltr" class="flex justify-center items-center" style="margin-top: 30px;">
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>00</p>
+                    </div>
+                    <p class="text-amber-50">:</p>
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>53</p>
+                    </div>
+                      <p class="text-amber-50">:</p>
+                    <div class="w-[30px] h-[30px] bg-amber-50 flex justify-center items-center rounded-[5px] " style="margin-inline: 5px;">
+                      <p>30</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/pro1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">آدرا</span>
+                      <p class="text-[15px] text-right h-[45px]">کرم مغذی و مرطوب کننده آرگان 300میل</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/saye.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">رز گونه تک رنگ همراه برس مخصوص</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/pankek.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کالیستا</span>
+                      <p class="text-[15px] text-right h-[45px]">پنکک فشرده نرم</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/primer.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">پرایمر و کرم زیر ساز آرایش</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/rozhgoneh.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">ترو کاور</span>
+                      <p class="text-[15px] h-[45px] text-right">رز گونه مدل اسکیلی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/creampoder1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">زنو باینوتیک</span>
+                      <p class="text-[15px] h-[45px] text-right">پرلیمر مناسب پوست چرب</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide bg-amber-50 rounded-[5px]">
+                <img src="./img/cream1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] h-[45px] text-right">کرم پودر فاقد چربی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" ></div>
+          </div>
+      </div>
+     </section>
+    <!--sec5  -->
+    <!-- sec6 -->
+    <section class="w-full flex justify-center " style="margin-top: 40px;">
+        <div class="hidden lg:flex container w-[90%] h-[400px] ">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-product swiper-slide">
+                            <img src="./img/slider-1.jpeg" class="w-full h-full object-fill "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-2.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-3.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-4.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-5.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-6.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider-7.jpeg" class="w-full h-full object-fill"/>
+                        </div>
+                  
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+        </div>
+        <!-- responsiveBanner -->
+          <div class="flex lg:hidden container w-[90%] h-[200px] ">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb1.jpeg" class="object-contain "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb3.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb2.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb4.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb5.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider2mb6.jpeg" class="object-contain"/>
+                        </div>
+                             <div class="swiper-slide">
+                            <img src="./img/slider2mb7.jpeg" class="object-contain"/>
+                        </div>
+                        
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+        </div>
+    </section>
+    <!-- sec6 -->
+    <!-- sec7 -->
+     <section class="h-[100px] flex flex-wrap" style="margin-top: 20px;">
+        <div class="w-[94%] flex justify-end" >
+          <p class="text-[18px] font-semibold">امروز چی بخریم؟</p>
+        </div>
+        <ul class="w-full h-[50px] flex justify-center items-end  *:flex *:justify-center">
+          <li class="w-[300px]  hover:border-b-2 group  border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">آرایشی</p>
+          </li>
+          <li class="w-[300px]  hover:border-b-2 group  border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">پرفروش ها</p></li>
+          <li class="w-[300px]  hover:border-b-2 group border-b border-gray-300 hover:border-pink-600">
+             <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">جدیدترین ها</p></li>
+          <li class="w-[300px]  hover:border-b-2 group border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">پیشنهادی</p></li>
+        </ul>
+     </section>
+    <!-- sec7 -->
+    <!-- sec8 -->   
+   <section class="w-[100%] flex justify-center">
+      <div class="hidden md:flex w-[90%]  h-[350px]  items-center ">
+          <div dir="rtl" class="swiper mySwiper2 h-[90%]  ">
+            <div class="swiper-wrapper">
+          
+      
+            
+              <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pro1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">آدرا</span>
+                      <p class="text-[15px] text-right h-[45px]">کرم مغذی و مرطوب کننده آرگان 300میل</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/saye.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">رز گونه تک رنگ همراه برس مخصوص</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pankek.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کالیستا</span>
+                      <p class="text-[15px] text-right h-[45px]">پنکک فشرده نرم</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/primer.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">پرایمر و کرم زیر ساز آرایش</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/rozhgoneh.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">ترو کاور</span>
+                      <p class="text-[15px] h-[45px] text-right">رز گونه مدل اسکیلی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/creampoder1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">زنو باینوتیک</span>
+                      <p class="text-[15px] h-[45px] text-right">پرلیمر مناسب پوست چرب</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/cream1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] h-[45px] text-right">کرم پودر فاقد چربی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+      <div class="flex md:hidden w-[90%]  h-[350px]  items-center  rounded-[5px]">
+          <div dir="rtl" class="swiper mySwiper3 h-[90%]  ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pro1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">آدرا</span>
+                      <p class="text-[15px] text-right h-[45px]">کرم مغذی و مرطوب کننده آرگان 300میل</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/saye.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">رز گونه تک رنگ همراه برس مخصوص</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pankek.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کالیستا</span>
+                      <p class="text-[15px] text-right h-[45px]">پنکک فشرده نرم</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/primer.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">پرایمر و کرم زیر ساز آرایش</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/rozhgoneh.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">ترو کاور</span>
+                      <p class="text-[15px] h-[45px] text-right">رز گونه مدل اسکیلی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/creampoder1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">زنو باینوتیک</span>
+                      <p class="text-[15px] h-[45px] text-right">پرلیمر مناسب پوست چرب</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/cream1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] h-[45px] text-right">کرم پودر فاقد چربی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" ></div>
+          </div>
+      </div>
+     </section>
+    <!-- sec8 -->
+    <!-- sec9 -->
+        <section class="w-full h-[100px] md:h-[150px] " style="padding-inline: 10px;">
+        <ul dir="rtl" class="hidden md:flex justify-evenly items-center md:h-[100px]  md:*:w-[90px]" style="margin-top: 30px;" >
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/seromposti.png" class="rounded-[50%]"/>
+                <p class="text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">سرم های پوستی</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/zedafteb.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">ضدآفتاب</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/ghors.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">ضداسترس</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/tala.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">زیورآلات طلا</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/moraghebat.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت مو</p>
+            </li>
+            <li class="h-full flex flex-wrap justify-center">
+                <img src="./img/daro.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت پوست و ناخن</p>
+            </li>
+        </ul>
+        <div class=" flex md:hidden ">
+      <div dir="rtl" class=" swiper mySwiper4" >
+        <ul  class="swiper-wrapper justify-evenly items-center " style="margin-top: 30px;">
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/seromposti.png" class="rounded-[50%]"/>
+                <p class="text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">سرم های پوستی</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/zedafteb.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">ضدآفتاب</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/ghors.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">ضداسترس</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/tala.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">زیورآلات طلا</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/moraghebat.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت مو</p>
+            </li>
+            <li class="h-full swiper-slide flex flex-wrap justify-center">
+                <img src="./img/daro.png" class="rounded-[50%]"/>
+                <p class=" text-gray-700 text-[10px] md:text-[13px]" style="margin-top: 10px;">مراقبت پوست و ناخن</p>
+            </li>
+            </ul>
+          </div>
+          </div>
+     </section>
+    <!-- sec9 -->
+    <!-- sec10 -->
+      <section class="w-full flex justify-center ">
+        <div class="hidden lg:flex container w-[90%] h-[400px] "  style="margin-top: 20px;">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-product swiper-slide">
+                            <img src="./img/banner3-1.jpeg" class="object-cover "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-2.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-3.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-4.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/slider5.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-5.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-6.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3-7.jpeg" class="object-contain"/>
+                        </div>
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination" style="margin-bottom: 10px;" ></div>
+                    </div>
+        </div>
+        <!-- responsiveBanner -->
+          <div class="flex lg:hidden container w-[90%] h-[200px] "  style="margin-top: 60px;">
+                  <div dir="rtl" class=" mySwiper  swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-2.jpeg" class="object-contain "/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-3.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-4.jpeg" class="object-cover"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-5.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-6.jpeg" class="object-contain"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3mb-7.jpeg" class="object-contain"/>
+                        </div>
+            
+                       
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev" ></div>
+                        <div class="swiper-pagination" style="margin-bottom: 10px;" ></div>
+                    </div>
+        </div>
+    </section>
+    <!-- sec10 -->
+    <!-- sec11 -->
+     <section class="w-full flex flex-wrap justify-center">
+        <div class="w-[90%]" style="margin-block: 20px;">
+          <img src="./img/bannerstatic1.jpeg" />
+        </div>
+        <div  class="w-[90%]" >
+          <img src="./img/bannerstatic2.jpeg"/>
+        </div>
+     </section>
+    <!-- sec11 -->
+    <!-- sec12 -->
+       <section class="h-[100px] flex flex-wrap" style="margin-top: 20px;">
+        <div class="w-[94%] flex justify-end" >
+          <p class="text-[18px] font-semibold">منتخب خانومی</p>
+        </div>
+        <ul dir="rtl" class="w-full h-[50px] flex justify-center items-end  *:flex *:justify-center">
+          <li class="w-[300px]  hover:border-b-2 group  border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">مکمل</p>
+          </li>
+          <li class="w-[300px]  hover:border-b-2 group  border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">لوازم برقی</p></li>
+          <li class="w-[300px]  hover:border-b-2 group border-b border-gray-300 hover:border-pink-600">
+             <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">دیجیتال</p></li>
+          <li class="w-[300px]  hover:border-b-2 group border-b border-gray-300 hover:border-pink-600">
+            <p class="text-[16px] text-gray-600 group-hover:text-pink-600" style="margin-bottom: 5px;">عطروادکلن</p></li>
+        </ul>
+     </section>
+    <!-- sec12 -->
+    <!-- sec13 -->
+    <section class="w-[100%] flex justify-center">
+      <div class="hidden md:flex w-[90%]  h-[350px]  items-center ">
+          <div dir="rtl" class="swiper mySwiper2 h-[90%]  ">
+            <div class="swiper-wrapper">
+          
+      
+            
+              <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/vitaminc.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">ویتامین سی</span>
+                      <p class="text-[15px] text-right h-[45px]">قرص جوشان ویتامین سی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/zheloskar.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کرم اسکار</span>
+                      <p class="text-[15px] text-right h-[45px]">برطرف کننده جای زخم و سوختگی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/seromposti.png" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">روغن نارگیل</span>
+                      <p class="text-[15px] text-right h-[45px]">تقویت کننده موی سر</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/capsolcolazhen.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">قرص کلازن</span>
+                      <p class="text-[15px] text-right h-[45px]">جوان کننده و کلازن ساز پوست</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/capsolnovacsa.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">عبیدی</span>
+                      <p class="text-[15px] h-[45px] text-right">کپسول نواکسابسته 20عددی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/ghors.png" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">عبیدی</span>
+                      <p class="text-[15px] h-[45px] text-right">قرص آرامبخش گیاهی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/capsolomg3.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">قرص امگا 3</span>
+                      <p class="text-[15px] h-[45px] text-right">قرصهای امگا 3</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+      <div class="flex md:hidden w-[90%]  h-[350px]  items-center  rounded-[5px]">
+          <div dir="rtl" class="swiper mySwiper3 h-[90%]  ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pro1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">آدرا</span>
+                      <p class="text-[15px] text-right h-[45px]">کرم مغذی و مرطوب کننده آرگان 300میل</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>642.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/saye.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">رز گونه تک رنگ همراه برس مخصوص</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>752.5</del></p>
+                      <p class="text-[16px]">526.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/pankek.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">کالیستا</span>
+                      <p class="text-[15px] text-right h-[45px]">پنکک فشرده نرم</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>442.5</del></p>
+                      <p class="text-[16px]">252.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">47%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/primer.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] text-right h-[45px]">پرایمر و کرم زیر ساز آرایش</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>220.5</del></p>
+                      <p class="text-[16px]">95.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">50%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/rozhgoneh.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full  text-right text-gray-600">ترو کاور</span>
+                      <p class="text-[15px] h-[45px] text-right">رز گونه مدل اسکیلی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>322.5</del></p>
+                      <p class="text-[16px]">250.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">17%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/creampoder1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">زنو باینوتیک</span>
+                      <p class="text-[15px] h-[45px] text-right">پرلیمر مناسب پوست چرب</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>459.5</del></p>
+                      <p class="text-[16px]">332.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">20%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="swiper-slide border border-gray-300 bg-amber-50 rounded-[5px]">
+                <img src="./img/cream1.jpg" class="w-full h-[60%] object-contain "/>
+                <div class="w-full h-full justify-start items-start" style="padding-inline: 8px;">
+                  <div class="w-full flex flex-wrap justify-start ">
+                      <span class="text-[15px] w-full text-right text-gray-600">این لی</span>
+                      <p class="text-[15px] h-[45px] text-right">کرم پودر فاقد چربی</p>
+                  </div>
+
+                  <div class="w-full flex justify-evenly ">
+              
+                    <div class="">
+                      <p class="text-[15px] text-gray-600"><del>1202.5</del></p>
+                      <p class="text-[16px]">856.5تومان</p>
+                    </div>
+                    <div class="w-[40px] h-[30px] bg-red-500 flex justify-center items-center rounded-[20%]">
+                      <p class="text-[12px] text-amber-50">30%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" ></div>
+          </div>
+      </div>
+     </section>
+    <!-- sec13 -->
+    <!-- sec14 -->
+     <section class="w-full justify-center flex">
+      <div class="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 p-4 ">
+        
+        <!-- ردیف اول -->
+        <div class="flex items-center justify-center">
+          <img src="./img/gridbanner1.jpeg" class="rounded-lg"/>
+        </div>
+               <div class="flex items-center justify-center">
+          <img src="./img/gridbanner2.jpeg" class="rounded-lg"/>
+        </div>
+                <div class="flex items-center justify-center">
+          <img src="./img/gridbanner3.jpeg" class="rounded-lg"/>
+        </div>
+                <div class="flex items-center justify-center">
+          <img src="./img/gridbanner4.jpeg" class="rounded-lg"/>
+        </div>
+        
+    </div>
+     </section>
+    <!-- sec14 -->
+    <!-- sec15 -->
+     <section dir="rtl" class="w-full justify-center flex " style="margin-top: 10px;" >
+      <div class="w-[90%] grid grid-cols-2  md:grid-cols-4 gap-4 p-4 ">
+        
+        <!-- ردیف اول -->
+        <div class="flex items-center justify-center">
+          <img src="./img/deformeimg1.png" class="rounded-lg"/>
+        </div>
+               <div class="flex items-center justify-center">
+          <img src="./img/deformeimg2.png" class="rounded-lg"/>
+        </div>
+                <div class="flex items-center justify-center">
+          <img src="./img/deformeimg3.png" class="rounded-lg"/>
+        </div>
+                <div class="flex items-center justify-center">
+          <img src="./img/deformeimg4.png" class="rounded-lg"/>
+        </div>
+        
+    </div>
+     </section>
+    <!-- sec15 -->
+    <!-- sec16 -->
+    <section dir="rtl" class="w-full justify-center flex " style="margin-top: 20px;" >
+      <div class="w-[90%] grid grid-cols-4  md:grid-cols-6 gap-4 p-4 ">
+        
+        <div class="flex items-center justify-center">
+          <img src="./img/logo1.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo2.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo3.jpeg" class="rounded-lg"/>
+        </div>      
+            <div class="flex items-center justify-center">
+          <img src="./img/logo4.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo5.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo6.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo7.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo8.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo9.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo2.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo11.jpeg" class="rounded-lg"/>
+        </div>
+            <div class="flex items-center justify-center">
+          <img src="./img/logo12.jpeg" class="rounded-lg"/>
+        </div>
+    </div>
+     </section>
+    <!-- sec16 -->
+    <!-- sec17 -->
+    <section class="h-[500px]  md:h-[350px] flex flex-wrap justify-center" style="margin-top: 20px;">
+        <div class="w-[90%] h-[50px]  flex justify-end items-end" >
+          <p class="text-[18px] font-semibold">سرویس های جدید</p>
+        </div>
+        <div dir="rtl" class="w-[90%]  grid grid-cols-2  md:grid-cols-4">
+        
+        <!-- ردیف اول -->
+        <div class="flex flex-wrap items-center border-1 border-gray-300 justify-center">
+          <img src="./img/talazinati.png" class="rounded-lg w-[60%]"/>
+          <div class="w-[90%]">
+            <p>طلای زینتی</p>
+            <span class="text-gray-500 text-[14px]">خرید طلای زینتی از بهترین برندها</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center border-1 border-gray-300 justify-center">
+          <img src="./img/shemshtala.png" class="rounded-lg w-[60%]"/>
+          <div class="w-[90%]">
+            <p>طلای دیجیتال</p>
+            <span class="text-gray-500 text-[14px]">در کمترین زمان سرمایتو طلا کن</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center border-1 border-gray-300 justify-center">
+          <img src="./img/bime.png" class="rounded-lg w-[60%]"/>
+          <div class="w-[90%]">
+            <p>بیمه</p>
+            <span class="text-gray-500 text-[14px]">خیالت از بالا پایین زندگی راحت</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center border-1 border-gray-300 justify-center">
+          <img src="./img/bookkhanomi.png" class="rounded-lg w-[60%]"/>
+          <div class="w-[90%]">
+            <p>مجله خانومی</p>
+            <span class="text-gray-500 text-[14px]">خواندنی ها را در خانومی از دست نده</span>
+          </div>
+        </div>
+        
+    </div>
+    </section>
+    <!-- sec17 -->
+    <!-- sec18 -->
+     <section dir="rtl" class="w-full flex flex-wrap bg-neutral-800 *:text-amber-50" style="margin-top: 20px;">
+        <div class="w-full h-[400px] hidden md:flex flex-wrap">
+        <div class="w-full  h-[90%] flex ">
+          <div class="w-1/4" style="margin-top: 40px;">
+          <p class=" flex justify-center ">خدمات مشتریان</p>
+          <ul  class=" *:text-right *:flex *:justify-center" style="margin-top: 20px;">
+            <li class="  group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">پرسش‌های متداول </p></li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">راهنمای خرید و پرداخت</p>
+            </li>
+             <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">رویه‌های ارسال</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">شرایط مرجوعی</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خرید کالای شانس</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">ارتباط با پشتیبانی</p>
+            </li>
+
+          </ul>
+        </div>
+        <div class="w-1/4 " style="margin-top: 40px;">
+              <p class=" flex justify-center">شرکت خانومی</p>
+          <ul  class=" *:text-right *:flex *:justify-center" style="margin-top: 20px;">
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">تماس با ما</p>
+            </li>
+               <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">درباره ی ما</p>
+            </li>   
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">فرصت های شغلی</p>
+            </li>
+               <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">حریم خصوصی</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">مجله خانومی</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خانومی بیزنس</p>
+            </li>
+            <li class="group" style="margin-block: 10px;">
+              <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خانومی TV</p>
+            </li>
+
+          </ul>
+        </div>
+        <div class="w-2/4 flex justify-center items-center">
+          <div class="w-[70%] flex flex-wrap justify-center items-center h-[200px] *:text-center">
+              <p>مارادر شبکه های اجتماعی دنبال کنید</p>
+              <p>هفت روز هفته، از ساعت 8 الی 24 پاسخگوی سوالات شما هستیم.</p>
+              <span>تلفن: 02191200500</span>
+          </div>
+             
+        </div>
+        </div>
+        <div class="w-full h-[10%] flex justify-center items-center border-t border-gray-200">
+          <p>created by farahnaz heydari in 2025</p>
+        </div>
+        </div>
+        <div class="w-full h-auto  md:hidden bg-neutral-800">
+             <div class="w-[90%] grid grid-cols-1 ">
+                <div class="w-full" style="margin-top: 40px;">
+                  <p class=" flex justify-center ">خدمات مشتریان</p>
+                  <ul  class=" *:text-right *:flex *:justify-center" style="margin-top: 20px;">
+                    <li class="  group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">پرسش‌های متداول </p></li>
+                    <li class="group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">راهنمای خرید و پرداخت</p>
+                    </li>
+                    <li class="group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">رویه‌های ارسال</p>
+                    </li>
+                    <li class="group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">شرایط مرجوعی</p>
+                    </li>
+                    <li class="group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خرید کالای شانس</p>
+                    </li>
+                    <li class="group" style="margin-block: 10px;">
+                      <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">ارتباط با پشتیبانی</p>
+                    </li>
+
+                  </ul>
+                </div>
+                  <div class="w-full " style="margin-top: 40px;">
+                    <p class=" flex justify-center">شرکت خانومی</p>
+                    <ul class=" *:text-right *:flex *:justify-center" style="margin-top: 20px;">
+                      <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">تماس با ما</p>
+                      </li>
+                        <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">درباره ی ما</p>
+                      </li>   
+                      <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">فرصت های شغلی</p>
+                      </li>
+                        <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">حریم خصوصی</p>
+                      </li>
+                      <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">مجله خانومی</p>
+                      </li>
+                      <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خانومی بیزنس</p>
+                      </li>
+                      <li class="group" style="margin-block: 10px;">
+                        <p class="group-hover:text-pink-500 border-b group border-neutral-800 group-hover:border-pink-500">خانومی TV</p>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="w-full flex justify-center items-center">
+                    
+                    <div class="w-[70%] flex flex-wrap justify-center items-center h-[200px] *:text-center">
+                        <p>مارادر شبکه های اجتماعی دنبال کنید</p>
+                        <p>هفت روز هفته، از ساعت 8 الی 24 پاسخگوی سوالات شما هستیم.</p>
+                        <span>تلفن: 02191200500</span>
+                    </div>
+             
+                  </div>
+                     <div class="w-full flex justify-center items-center border-t border-gray-200">
+                      <p >created by farahnaz heydari in 2025</p>
+                      </div>
+             </div>
+        </div>
+     </section>
+    <!-- sec18 -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper4 = new Swiper(".mySwiper4", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+      var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 1.08,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 5.5,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper= new Swiper(".mySwiper", {
+        rewind: true,
+        slidesPerView:1.2,
+        spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
